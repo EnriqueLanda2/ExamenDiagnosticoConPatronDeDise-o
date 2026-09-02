@@ -1,0 +1,83 @@
+/* ============================================================
+   Estilos generales
+   ============================================================ */
+body {
+  background-color: #ffffff;
+  color: #1f2328;
+}
+
+/* ============================================================
+   Grid de productos
+   ============================================================ */
+#product-list {
+  --bs-gutter-x: 1rem;
+  --bs-gutter-y: 1rem;
+}
+
+/* ============================================================
+   Card de producto
+   ============================================================ */
+.product-card {
+  height: 100%;
+  border: 1px solid #f0f1f3;
+  border-radius: 14px;
+  background-color: #ffffff;
+  box-shadow: 0 1px 3px rgba(16, 24, 40, 0.06);
+  overflow: hidden;
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.product-card:hover {
+  box-shadow: 0 8px 20px rgba(16, 24, 40, 0.1);
+  transform: translateY(-2px);
+}
+
+/* --- Zona de la imagen --- */
+.product-card__media {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  aspect-ratio: 1 / 1;
+  padding: 1.25rem;
+  background-color: #f7f7f8;
+}
+
+.product-card__media img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  mix-blend-mode: multiply;
+}
+
+/* --- Contenido --- */
+.product-card__body {
+  padding: 0.85rem 1rem 1rem;
+}
+
+.product-card__title {
+  margin-bottom: 0.35rem;
+  font-size: 0.95rem;
+  font-weight: 500;
+  line-height: 1.25;
+  color: #1f2328;
+}
+
+.product-card__price {
+  margin-bottom: 0.35rem;
+  font-size: 0.95rem;
+  font-weight: 400;
+  color: #3c4149;
+}
+
+/* --- Estrellas --- */
+.product-card__rating {
+  display: flex;
+  gap: 0.1rem;
+  font-size: 0.8rem;
+  color: #f5a623;
+  line-height: 1;
+}
+
+.product-card__rating .bi-star {
+  color: #d9dbe0;
+}
